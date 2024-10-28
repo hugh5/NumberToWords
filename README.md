@@ -2,11 +2,11 @@
 This project is a simple web application built with ASP.NET Core, designed to convert a numerical input (dollar amount) into its corresponding words representation (e.g., "123.45" to "ONE HUNDRED AND TWENTY-THREE DOLLARS AND FORTY-FIVE CENTS").
 
 ## Table of Contents
-- Project Structure
-- Installation
-- Running the Application
-- Running Tests
-- Usage
+- [Project Structure](#project-structure)
+- [Installation](#installation)
+- [Running the Application](#running-the-application)
+- [Running Tests](#running-tests)
+- [Usage](#usage)
 
 ## Project Structure
 The project consists of two main components:
