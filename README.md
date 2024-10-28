@@ -10,6 +10,13 @@ This project is a simple web application built with ASP.NET Core, designed to co
 - [Running the Application](#running-the-application)
 - [Running Tests](#running-tests)
 - [Usage](#usage)
+- [Technlogy Reasoning](#technology-reasoning)
+	- [C# with ASP.NET Core](#c-with-aspnet-core)
+	- [Playwright with MSTest](#playwright-with-mstest)
+- [Test Plan](#test-plan)
+	- [Objectives](#objectives)
+	- [Testing Strategy](#testing-strategy)
+	- [Not apart of the test plan](#not-apart-of-the-test-plan)
 
 ## Project Structure
 The project consists of two main components:
@@ -57,9 +64,41 @@ The UnitTest1.cs file includes tests for the IndexModel functionality, covering 
 2. Convert a Number to Words:
 	- Enter a decimal number (e.g., "123.45") in the input box.
 	- Click the Convert button.
-	- The output will display the number in words (e.g., "ONE HUNDRED AND TWENTY-THREE DOLLARS AND FORTY-FIVE CENTS").
-
-
-## Notes
+	- The output will display the number in words (e.g., "ONE HUNDRED AND TWENTY-THREE DOLLARS AND FORTY-FIVE CENTS").\
 - This project is designed for demonstration purposes and includes only basic input validation.
 - It is recommended to enter valid decimal numbers within the range supported by System.Decimal.
+
+
+## Technlogy Reasoning
+
+#### C# with ASP.NET Core
+Reason for Choice:
+- ASP.NET Core provides a powerful framework for building web applications, which allows for rapid development and integration with various tools and services e.g. testing frameworks and deployment pipelines.
+- C#'s strong typing and object-oriented features enable better maintainability and readability of the codebase, reducing the likelihood of runtime errors and enhancing code quality.
+- ASP.NET Core allows the application to run on various operating systems, making it flexible for deployment in different environments.
+
+#### Playwright with MSTest
+Reason for Choice:
+- Playwright enables testing across different browsers, ensuring that the application behaves consistently regardless of the user’s choice of browser.
+- The framework's API is straightforward, making it easy to write and maintain tests. This is particularly useful for ensuring that the application remains functional as changes are made during development.
+
+## Test Plan
+
+####  Objectives
+1. Verify that the application displays the correct title.
+1. Ensure the application accurately converts valid numeric inputs into words.
+1. Validate that the application handles edge cases and maximum input values appropriately.
+1. Confirm that the application provides appropriate error messages for invalid inputs.
+
+#### Testing Strategy
+1. Type of Testing: Automated Functional Testing
+1. Testing Framework: Playwright with MSTest
+1. Test Types: Unit tests for individual functionalities
+	- This includes coming up with test cases for different scenarios, such as zero values, valid dollar and cent amounts, and maximum allowable values.
+	- And then comparing the expected output with the actual output.
+1. Environment: Local development server (http://localhost:5000)
+
+#### Not apart of the test plan
+1. Performance testing
+1. Security testing
+1. Compatibility testing on different browsers and devices (this may be considered for future testing)
