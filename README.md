@@ -1,6 +1,9 @@
 # NumberToWords Web Application
 This project is a simple web application built with ASP.NET Core, designed to convert a numerical input (dollar amount) into its corresponding words representation (e.g., "123.45" to "ONE HUNDRED AND TWENTY-THREE DOLLARS AND FORTY-FIVE CENTS").
 
+![image](https://github.com/user-attachments/assets/9bd26646-9b3a-4c4f-9249-0909ddfbc39b)
+
+
 ## Table of Contents
 - [Project Structure](#project-structure)
 - [Installation](#installation)
