@@ -1,0 +1,24 @@
+﻿@page
+@model IndexModel
+@{
+    ViewData["Title"] = "Number to Words Converter";
+}
+
+<div>
+    <h1 class="display-4 text-center">Number to Words Converter</h1>
+    <form method="post">
+        <div class="form-group">
+            <label for="numberInput">Enter a number:</label>
+            <input type="text" id="numberInput" name="NumberInput" class="form-control" value="@Model.NumberInput" />
+        </div>
+        <button type="submit" class="btn btn-primary mt-2">Convert</button>
+    </form>
+
+    @if (!string.IsNullOrEmpty(Model.ConversionResult))
+    {
+        <div class="mt-4">
+            <h3>Result:</h3>
+            <p id="result">@Model.ConversionResult</p>
+        </div>
+    }
+</div>
